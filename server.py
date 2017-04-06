@@ -7,7 +7,6 @@ import config
 import simplejson as json
 import time
 
-
 from pprint import pprint
 
 app = flask.Flask(__name__)
@@ -36,7 +35,7 @@ def log():
     data['files'] = r.files.to_dict(flat=False)
     data['json'] = r.get_json()
 
-    print(data)
+    pprint(data)
 
     io = StringIO.StringIO()
     json.dump(data, io, sort_keys=True, indent=4)
