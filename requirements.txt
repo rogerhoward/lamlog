@@ -1,0 +1,6 @@
+zappa
+requests
+simplejson
+boto3
+Flask
+click
